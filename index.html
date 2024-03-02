@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <img
+          src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/users.png"
+          alt="error"
+        />
+        <button class="render">render</button>
+
+        <button class="sort" data-uk-tooltip title="сортировка по алфавиту">
+          sort
+        </button>
+        <select id="filter-select">
+          <option value="all">all</option>
+          <option value="admin">admin</option>
+          <option value="customer">customer</option>
+        </select>
+      </div>
+    </nav>
+    <div id="loading-indicator" class="loading-indicator">Загрузка...</div>
+    <div class="container__user"></div>
+    <div id="pagination" class="pagination">
+      <button id="prev-page-btn"><</button>
+      <button id="next-page-btn">></button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

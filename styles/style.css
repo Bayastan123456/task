@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  /* position: fixed; */
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 50px;
+  padding: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  width: 100%;
+}
+.navbar > img {
+  width: 50px;
+}
+.container__user {
+  margin: auto;
+  padding: 50px;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.user-card {
+  background-color: rgb(17, 120, 120);
+  box-shadow: 20px 20px 2px rgb(35, 34, 34);
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+.user-card > img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.render {
+  padding: 10px 20px;
+  background-color: rgb(17, 120, 120);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.sort {
+  padding: 10px 20px;
+  background-color: rgb(17, 120, 120);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.loading-indicator {
+  display: none;
+  font-size: 18px;
+  margin-top: 200px;
+  color: #333;
+  text-align: center;
+}
+#filter-select {
+  padding: 10px 10px;
+  background-color: rgb(17, 120, 120);
+  color: white;
+  border-radius: 20px;
+}
+
+.pagination {
+  text-align: center;
+}
+.pagination > button {
+  background-color: rgb(17, 120, 120);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.pagination > button[disabled] {
+  background-color: #333;
+  color: rgba(240, 248, 255, 0.166);
+  cursor: default;
+}
+
+@media all and (max-width: 715px) {
+  .container__user {
+    justify-content: center;
+  }
+}
